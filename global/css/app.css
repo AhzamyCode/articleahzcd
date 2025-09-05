@@ -10,12 +10,12 @@ body {
    font-family: 'Arial', sans-serif;
    line-height: 1.6;
    background-color: #f4f4f4;
-   color: #333;
+   color: #041014;
 }
 
 /* Header */
 .header {
-   background-color: #3498db;
+   background-color: #054c8a !important;
    color: white;
    padding: 40px 0;
    text-align: center;
@@ -44,7 +44,7 @@ main {
 
 .article-intro h2 {
    font-size: 30px;
-   color: #3498db;
+   color: #041014;
 }
 
 .article-intro p {
