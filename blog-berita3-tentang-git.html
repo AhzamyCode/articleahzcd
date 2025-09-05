@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Git Bash</title>
+    <link rel="stylesheet" href="global/css/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="icon" href="assets/icon/icon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1 class="bg-primary text-center">Mengenal Git Bash: Gerbang menuju Kontrol Versi</h1>
+        <p>Git Bash adalah aplikasi yang menyediakan antarmuka baris perintah (command-line interface) untuk Git di lingkungan Windows. Sederhananya, Git Bash memungkinkan kamu menggunakan semua perintah Git yang sama seperti di Linux atau macOS, tanpa harus menggunakan antarmuka grafis yang mungkin terbatas fiturnya.</p>
+        <hr>
+        <p>Git Bash bekerja dengan meniru lingkungan terminal Unix di Windows, sehingga kamu bisa menjalankan perintah-perintah Git yang kuat dan efisien untuk mengelola proyekmu. Ini sangat penting untuk kolaborasi dan melacak setiap perubahan kode.</p>
+
+        <h2>Mengapa Git Itu Penting?</h2>
+        <p>Git, sebagai sistem kontrol versi terdistribusi, sangat fundamental dalam pengembangan perangkat lunak modern. Fungsinya bukan hanya untuk menyimpan kode, tetapi juga sebagai alat kolaborasi yang efektif. Dengan Git, setiap pengembang bisa bekerja di salinan kode proyek mereka sendiri (repositori lokal), lalu menggabungkan perubahan mereka ke repositori utama (remote). Hal ini mengurangi risiko konflik dan memungkinkan tim untuk melacak riwayat perubahan secara detail.</p>
+        <p>Salah satu fitur andalannya adalah **branching**, yang memungkinkan pengembang untuk membuat versi independen dari kode utama. Ini sangat berguna ketika sedang mengembangkan fitur baru atau memperbaiki bug tanpa mengganggu stabilitas versi utama produk. Setelah pekerjaan selesai, branch bisa digabungkan kembali dengan mudah.</p>
+
+        <h2>Alur Kerja Dasar Git Bash</h2>
+        <p>Untuk memulai proyek baru dengan Git Bash, kamu bisa mengikuti alur kerja sederhana ini:</p>
+        <ol>
+            <li><b>Inisialisasi Proyek:</b> Gunakan perintah <code>git init</code> untuk mengubah folder proyekmu menjadi repositori Git. Ini adalah langkah awal yang wajib dilakukan.</li>
+            <li><b>Menambahkan Perubahan:</b> Setelah membuat perubahan pada file, gunakan <code>git add .</code> untuk memasukkan semua perubahan ke staging area. Ini seperti menandai file mana saja yang siap untuk disimpan.</li>
+            <li><b>Melakukan Commit:</b> Dengan <code>git commit -m "Pesan commitmu"</code>, kamu merekam semua perubahan yang ada di staging area ke riwayat proyek. Pesan commit sangat penting untuk menjelaskan apa yang sudah kamu ubah.</li>
+            <li><b>Menghubungkan ke GitHub:</b> Jika ini proyek pertama, gunakan <code>git remote add origin [URL]</code> untuk menghubungkan proyek lokal ke GitHub. Setelah itu, gunakan <code>git push -u origin main</code> untuk mengunggah kode ke GitHub.</li>
+        </ol>
+        <p>Jika kamu hanya ingin memperbarui kode, cukup lakukan <code>git pull</code> untuk mengambil perubahan terbaru dari GitHub, lalu `git add`, `git commit`, dan `git push` untuk mengirim perubahanmu.</p>
+        <hr>
+
+    </div>
+
+    <div class="accordion container" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Poin Pembahasan
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>Berikut adalah poin-poin utama yang akan kita bahas dalam penggunaan Git Bash, dari dasar hingga operasi penting:</p>
+                    <ul>
+                        <li><b>Instalasi dan Konfigurasi Awal:</b> Langkah pertama untuk memulai Git Bash adalah mengunduh dan menginstalnya. Setelah terinstal, kamu perlu melakukan konfigurasi dasar, seperti mengatur nama pengguna dan alamat email.</li>
+                        <li><b>Perintah Dasar Git:</b> Kita akan mempelajari perintah-perintah fundamental seperti <code>git init</code> untuk menginisialisasi repositori baru, <code>git add</code> untuk menambahkan file ke staging area, dan <code>git commit</code> untuk menyimpan perubahan.</li>
+                        <li><b>Menghubungkan ke GitHub:</b> Selanjutnya, kita akan membahas cara menghubungkan repositori lokalmu dengan repositori jarak jauh (remote) di GitHub. Ini memungkinkan kamu untuk mengunggah dan membagikan proyekmu secara daring.</li>
+                        <li><b>Manajemen Branch:</b> Fitur branch adalah salah satu kekuatan utama Git. Kita akan membahas cara membuat branch baru, beralih di antara branch, dan menggabungkan perubahan dari satu branch ke branch lainnya.</li>
+                        <li><b>Pull dan Push:</b> Terakhir, kita akan melihat cara menyinkronkan proyekmu dengan GitHub. Perintah <code>git pull</code> digunakan untuk mengambil perubahan dari repositori jarak jauh, dan <code>git push</code> digunakan untuk mengunggah perubahan lokalmu.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AhzamyCode Corp. Semua Hak Dilindungi.</p>
+            <div class="footer-links">
+                <a href="https://ahzamycode.biz.id">Tentang Kami</a>
+                <a href="#">Layanan</a>
+                <a href="#">Kontak</a>
+                <a href="#">Privasi</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+</body>
+</html>
